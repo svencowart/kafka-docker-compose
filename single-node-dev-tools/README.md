@@ -7,4 +7,4 @@ Start the cluster with: `docker-compose up`
 Stop the cluster with: `docker-compose down`
 
 ## How to enable external clients to connect
-If you are trying to connect a client that is outside of this docker network to the broker on this Kafka cluster, then edit your machine's `/etc/hosts` file.  Add the following line to the end of the hosts file `127.0.0.1       broker`.
+If you are trying to connect a client that is outside of this docker network to the broker on this Kafka cluster, then edit your machine's `/etc/hosts` file.  Add the following two lines to the end of the hosts file `127.0.0.1       broker` and `127.0.0.1       zookeeper`.
